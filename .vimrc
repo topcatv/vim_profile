@@ -66,3 +66,4 @@ autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
 set laststatus=2
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
+set t_Co=256
