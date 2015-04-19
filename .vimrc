@@ -26,6 +26,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'ack.vim'
 
 " Optional:
 Plugin 'honza/vim-snippets'
@@ -53,6 +54,8 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+set background=dark
+colorscheme solarized
 set number
 syntax on
 set autoindent
@@ -66,4 +69,7 @@ autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
 set laststatus=2
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
-set t_Co=256
+" set t_Co=256
+if has("gui_running")
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14 //powerline字体
+endif
